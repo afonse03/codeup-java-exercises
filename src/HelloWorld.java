@@ -1,12 +1,19 @@
 //introduction to java exercise (9/2/21)
 /* To-Do for Intro to Java exercise:
-  todo: create a program that outputs "Hello, World!" to the console.
-  todo: try renaming the main method. What happens when we try to run it? IT WONT RUN
-  todo: refactor your code to use two system.out.print statements without changing the output
+  todo DONE: create a program that outputs "Hello, World!" to the console.
+  todo DONE: try renaming the main method. What happens when we try to run it? IT WONT RUN
+  todo DONE: refactor your code to use two system.out.print statements without changing the output
  */
 // the out directory is where IntelliJ puts the compiled Java files, to keep them separate from the source code
-// system.out.println is used to output information to the console with a newline
+// system.out.println is used to output information to the console with a new line
 // system.out.print can be used to output information without a newline
+
+public class HelloWorld { //this is a class definition
+    public static void main(String[] args) { //main HAS to be there or it won't run; this is a method (or a function); every function is a method; args means arguments; the method can take an array of arguments
+        System.out.println("Hello, World!");
+        System.out.println("Hello again, World!"); //this output is right next to the one above when I add a second System.out.print statement. if both statements are system.out.println then the outputs are on their own line
+
+/*====================================================================================================*/
 
 /* To-Do for Syntax, Types, and Variables exercise:
   todo: create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console
@@ -19,10 +26,7 @@
  */
 
 
-public class HelloWorld { //this is a class
-    public static void main(String[] args) { //main HAS to be there or it won't run; this is a method (or a function); every function is a method; args means arguments; the method can take an array of arguments
-        System.out.println("Hello, World!");
-        System.out.println("Hello again, World!"); //this output is right next to the one above when I add a second System.out.print statement. if both statements are system.out.println then the outputs are on their own line
+
 
         int myFavoriteNumber = 10; //how do I print this to the console? System.out.print();
 //        console.log(myFavoriteNumber);
