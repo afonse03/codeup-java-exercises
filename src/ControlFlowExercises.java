@@ -1,23 +1,30 @@
 // control statements and loops exercise
-
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
-            if (((i % 3) == 0) && ((i % 5) == 0)) { // is it a multiple of 3 & 5?
-                System.out.println("FizzBuzz");
-            } else if ((i % 3) == 0) { // is it a multiple of 3?
-                System.out.println("Fizz");
-            } else if ((i % 5) == 0) { // is it a multiple of 5?
-                System.out.println("Buzz");
-            } else System.out.println(i); // not a multiple of either 3 or 5
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter an integer: ");
+       int userInteger = Integer.parseInt(String.valueOf(scanner.nextInt()));
+        System.out.println("Here is your table!");
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+//        System.out.printf("number");
+//        System.out.printf(" | ");
+//        System.out.printf("squared");
+//        System.out.printf(" | ");
+//        System.out.printf("cubed");
+        for (int i = 1; i <= userInteger; i++) {
+            System.out.printf("%-7d| %-8d| %-5d%n", i, i*i, i*i*i);
         }
+        System.out.println(" ");
+        System.out.println("Do you want to continue?");
     }
 }
 
-//source: https://howtodoinjava.com/java/puzzles/fizzbuzz-solution-java/
 
-/*todo: Fizzbuzz - 1. write a program that prints the numbers from 1 to 100
-                   2. for multiples of three: print "fizz" instead of the number
-                   3. for the multiples of five: print "buzz"
-                   4. for numbers which are multiples of both three and five: print "FizzBuzz"
+/*todo: display a table of powers - 1. prompt the user to enter an integer
+                                    2. display a table of squares and cubes from 1 to the value entered
+                                    3. ask if the user wants to continue
+                                    4. assume that the user will enter valid data
+                                    5. only continue if the user agrees to
  */
