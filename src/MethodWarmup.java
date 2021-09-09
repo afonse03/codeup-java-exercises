@@ -14,7 +14,7 @@ public class MethodWarmup {
         return x - y;
     }
     public static void main(String[] args) {
-        System.out.println(getDifference(50));
+        System.out.println(getDifference(50, 70));
 
     }
 }
