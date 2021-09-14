@@ -25,6 +25,13 @@ public class ArraysExercises { //class
         for (Person person : people) {
             System.out.println(person.getName());
         }
+        System.out.println("Enter a person's name: ");
+        Person newPerson = new Person(sc.nextLine());
+        people = addPerson(people, newPerson);
+        System.out.println("New list: ");
+        for (Person person : people) {
+            System.out.println(person.getName());
+        }
     }
 
 }

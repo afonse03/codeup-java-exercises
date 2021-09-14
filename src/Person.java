@@ -3,11 +3,15 @@
 
 import java.util.Scanner;
 public class Person {
+    public Person(String name) {
+        this.name = name;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("What is your name? ");
         String userInput = scanner.next();
-        Person personName = new Person();
+//        Person personName = new Person();
 
         System.out.println("Nice to meet you " + userInput + "!");
     }
