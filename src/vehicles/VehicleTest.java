@@ -2,7 +2,7 @@
 
 //public class VehicleTest {
 //    public static void main(String[] args) {
-//        Vehicle mustang = new Vehicle();
+//        vehicles.Vehicle mustang = new vehicles.Vehicle();
 //        mustang.setName = "mustang";
 //        System.out.println(mustang.getName());
 //        mustang.makeNoise();
