@@ -39,9 +39,9 @@ public class ServerNameGenerator {
         int randomNoun = generator.nextInt(nouns.length);
         return adjectives[randomAdjective];
 
-    public static void main(String[] args) {
-            System.out.println(wordGenerator());
-        }
+//    public static void main(String[] args) {
+//            System.out.println(wordGenerator());
+//        }
 
 
 //    public static void main(String[] args) {
