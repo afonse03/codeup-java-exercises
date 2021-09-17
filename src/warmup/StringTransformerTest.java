@@ -7,9 +7,9 @@ Create a class, StringTransformerTest, with a main method: For the last part of 
  */
 
 package warmup;
-
-public class StringTransformerTest {
-    public static void main(String[] args) {
-        System.out.println(new ReverseStringTransformer("Howdy"));
-    }
-}
+//
+//public class StringTransformerTest {
+//    public static void main(String[] args) {
+//        System.out.println(new ReverseStringTransformer("Howdy"));
+//    }
+//}

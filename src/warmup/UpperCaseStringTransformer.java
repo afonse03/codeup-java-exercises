@@ -8,14 +8,14 @@ Create a subclass, UpperCaseStringTransformer, that extends StringTransformer:
 
 package warmup;
 
-public class UpperCaseStringTransformer extends StringTransformer {
-    public class UpperCaseStringTransformer(String str) {
-        setStr(str);
-    }
-
-    String transform() {
-        return getStr().toUpperCase();
-    }
-}
+//public class UpperCaseStringTransformer extends StringTransformer {
+//    public class UpperCaseStringTransformer(String str) {
+//        setStr(str);
+//    }
+//
+//    String transform() {
+//        return getStr().toUpperCase();
+//    }
+//}
 
 

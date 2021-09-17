@@ -8,14 +8,14 @@ Create a subclass, ReverseStringTransformer, that extends StringTransformer:
 
 package warmup;
 
-public class ReverseStringTransformer extends StringTransformer{
-    public class ReverseStringTransformer(String str) {
-        setStr(str);
-    }
-
-    String transform() {
-        return new StringBuilder(str).reverse().toString();
-    }
-}
+//public class ReverseStringTransformer extends StringTransformer{
+//    public class ReverseStringTransformer(String str) {
+//        setStr(str);
+//    }
+//
+//    String transform() {
+//        return new StringBuilder(str).reverse().toString();
+//    }
+//}
 
 
