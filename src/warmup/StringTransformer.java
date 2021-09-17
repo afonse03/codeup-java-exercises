@@ -1,7 +1,7 @@
 // warmup on 9/17/21
 /*
 ================================= WARM UP
-Create an abstract class, StringTransformer:
+Create an abstract class, StringTransformer: DONE
   - add a protected string variable called ‘str’
   - add a constructor to set the variable
   - add public add getters and setters for this variable
@@ -28,31 +28,29 @@ package warmup;
 import org.w3c.dom.ls.LSOutput;
 
 abstract class StringTransformer {
-    protected String str;
+    protected String str; // a protected string variable called ‘str’
 
+    // a constructor to set the variable
+    public StringTransformer(String str) {
+        //System.out.println("I'm a string transformer");
+        this.str = str;
+    }
 
-    //constructor?
+    // public getter for this variable
+    public String getStr() {
+        return str;
+    }
+
+    // public setter for this variable
+    public void setStr(String str) {
+        this.str = str;
+    }
+
     public StringTransformer() {
-//        System.out.println("I'm a string transformer");
-
-
-    //public getters and setters
-    public
 
     }
+
+    // an abstract method called ‘transform()’ that returns a string
+    abstract String transform();
+
 }
-
-
-
-
-
-
-/*
-abstract class Media {
-    public void enjoyMedia() {
-        System.out.println("You enjoy this media");
-    }
-
-    public abstract void setupMedia();
-}
- */
