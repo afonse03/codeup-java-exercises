@@ -1,6 +1,8 @@
+//quadrilateral is the parent class
+
 package shapes;
 
-abstract class Quadrilateral extends Shape implements Measurable {
+public abstract class Quadrilateral extends Shape implements Measurable {
 
     // protected properties
    protected double length;
@@ -12,22 +14,27 @@ abstract class Quadrilateral extends Shape implements Measurable {
        this.width = width;
    }
 
-    public Quadrilateral() {
+//    public Quadrilateral() {
+//
+//    }
 
-    }
-
-    // methods for getting the length and width
+    // method for getting the length
     public double getLength() {
        return length;
     }
 
+    // abstract method for setting the length
+    public abstract void setLength(double length);
+
+    // method for getting the width
     public double getWidth() {
        return width;
     }
 
-    // abstract methods for setting the length and width
-    public abstract void setLength();
-    public abstract void setWidth();
+    // abstract method for setting the width
+    public abstract void setWidth(double width);
+
+
 }
 
 

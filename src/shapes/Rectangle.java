@@ -2,33 +2,30 @@ package shapes;
 
 import org.w3c.dom.css.Rect;
 
-public class Rectangle extends Quadrilateral implements Measurable {
+public class Rectangle extends Quadrilateral {
+    // constructor
     public Rectangle(double length, double width) {
-        super(length, width);
-    }
-
-    public Rectangle() {
-
+        super(length, width); // super is a constructor
     }
 
     @Override
-    public double getPerimeter() {
-        return 0;
+    public double getPerimeter() { // you have to update the formulas or else you'll return zero
+        return (length + width) * 2;
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 
     @Override
-    public void setLength() {
-
+    public void setLength(double length) {
+        this.length = length;
     }
 
     @Override
-    public void setWidth() {
-
+    public void setWidth(double width) {
+        this.width = width;
     }
 }
 
