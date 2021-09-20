@@ -3,6 +3,22 @@ package music;
 public class Sax extends MusicalInstrument implements Tuneable, VolumeAdjustable {
     private String saxType;
 
+    // updated constructor
+    public Sax(String instrumentClassification, String saxType) {
+        super(instrumentClassification);
+        this.saxType = saxType;
+    }
+
+    // getter
+    public String getSaxType() {
+        return saxType;
+    }
+
+    // setter
+    public void setSaxType(String saxType) {
+        this.saxType = saxType;
+    }
+
     @Override
     public void startMusic() {
         System.out.println("Let's play!");

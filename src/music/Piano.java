@@ -1,8 +1,26 @@
 package music;
-
-public class Piano extends MusicalInstrument implements Tuneable, VolumeAdjustable {
+//import shapes; // this is how you refer to other packages by using the keyword import
+public class Piano extends MusicalInstrument implements Tuneable, VolumeAdjustable { // class
+    // instance field
     private String numberOfKeys;
 
+    // updated constructor
+    public Piano(String instrumentClassification, String numberOfKeys) {
+        super(instrumentClassification);
+        this.numberOfKeys = numberOfKeys;
+    }
+
+    // getter
+    public String getNumberOfKeys() {
+        return numberOfKeys;
+    }
+
+    // setter
+    public void setNumberOfKeys(String numberOfKeys) {
+        this.numberOfKeys = numberOfKeys;
+    }
+
+    // methods
     @Override
     public void startMusic() {
         System.out.println("Let's play!");

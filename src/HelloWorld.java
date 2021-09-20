@@ -32,18 +32,22 @@ public class HelloWorld { //this is a class definition
 //        console.log(myFavoriteNumber);
         System.out.println(myFavoriteNumber);
 
-//        String myString = "amanda";
-//        System.out.println(myString);
+        String myString = "amanda";
+        System.out.println(myString);
 
 //        String myString = 'a'; //I received an incompatible types error in the console
 //        System.out.println(myString);
 
+        // this is how you reassign the above code
+        String myString2 = myString;
+        System.out.println(myString);
+
 //        int myString = 3.14159; //I received an incompatible types error in the console
-//        System.out.println(myString);
+        System.out.println(myString);
 
         //s o u t, tab and it automatically pulls out the console.log
 
-//        long myNumber; //I received a variable myNumber might not have been initialized error in the console
+//        float myNumber = 314.0; //I received a variable myNumber might not have been initialized error in the console
 //        System.out.println(myNumber);
 
 //        long myNumber = 3.14; //I received an incompatible types error in the console
