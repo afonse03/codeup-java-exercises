@@ -1,6 +1,8 @@
 package movies;
 
-public class Movie {
+import warmup.Entertains;
+
+public class Movie implements Entertains {
     private String name;
     private String category;
 
@@ -23,5 +25,9 @@ public class Movie {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String audienceReaction() {
+        return "oooooooh " + name + " was so awesome!";
     }
 }
