@@ -9,9 +9,11 @@ Create a class called CollectionsTest and include the following...
 
 package warmup;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class CollectionsTest {
     public static ArrayList<Integer> omit2s(ArrayList<Integer> integers) {
@@ -58,20 +60,13 @@ second mini exercise 9/20/21
         {"first key": "first value", "second key": "second value"}
 
  */
-//    public static HashMap<String, String> createMap(List<String> first, List<String> second) {
-//        HashMap<String, String> createdHashMap = new HashMap<>();
-//        for (int i = 0; i < first.size(); i++) {
-//            createdHashMap.put(first.get(i), second.get(i));
-//            System.out.println(createdHashMap);
-//        }
-//        return createdHashMap;
-//    }
-
-
-
-
-
-
-
+    public static HashMap<String, String> createMap(List<String> first, List<String> second) {
+        HashMap<String, String> createdHashMap = new HashMap<>();
+        for (int i = 0; i < first.size(); i++) {
+            createdHashMap.put(first.get(i), second.get(i));
+            System.out.println(createdHashMap);
+        }
+        return createdHashMap;
+    }
 }
 
