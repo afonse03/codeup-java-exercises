@@ -43,6 +43,12 @@ public class JavaDrills {
         System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7, 1)));
+
+        System.out.println(flipInnerCase(“cat”)); // cAt
+        System.out.println(flipInnerCase(“CaT”)); // CAT
+        System.out.println(flipInnerCase(“caT”)); // cAT
+        System.out.println(flipInnerCase(“codeup”)); // cODEUp
+        System.out.println(flipInnerCase(“CoDeup”)); // COdEUp
     }
 
     // warmup on 10/15/21
@@ -65,7 +71,40 @@ public class JavaDrills {
         }
         return totalFirst - totalSecond;
     }
+
+    // still in progress
+    // warmup on 10/21/12
+    /*
+    TODO: In 'codeup-java-exercises', in 'JavaDrills' add the following:
+     Create a public static method, `flipInnerCase`, that takes in a string and returns the string
+     with the case of all letters reversed EXCEPT for the first and last letters. Assume the input will be three or more characters long.
+    Example inputs and expected outputs...
+      System.out.println(flipInnerCase(“cat”)); // cAt
+      System.out.println(flipInnerCase(“CaT”)); // CAT
+      System.out.println(flipInnerCase(“caT”)); // cAT
+      System.out.println(flipInnerCase(“codeup”)); // cODEUp
+      System.out.println(flipInnerCase(“CoDeup”)); // COdEUp
+     */
+
+    public static String flipInnerCase(String s) {
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
+            boolean innerChar = chars[i] != chars[0] && chars[i] != chars[chars.length - 1];
+            if (Character.isUpperCase(c)) {
+                if (innerChar) {
+                    chars[i] = Character.toLowerCase(c);
+                }
+            } else if (Character.isLowerCase(c)) {
+                if (innerChar) {
+                    chars[i] = Character.toUpperCase(c);
+                }
+            }
+        }
+        return new String(chars);
+    }
 }
+
 
 
 
