@@ -44,11 +44,11 @@ public class JavaDrills {
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7, 1)));
 
-        System.out.println(flipInnerCase(“cat”)); // cAt
-        System.out.println(flipInnerCase(“CaT”)); // CAT
-        System.out.println(flipInnerCase(“caT”)); // cAT
-        System.out.println(flipInnerCase(“codeup”)); // cODEUp
-        System.out.println(flipInnerCase(“CoDeup”)); // COdEUp
+//        System.out.println(flipInnerCase(“cat”)); // cAt
+//        System.out.println(flipInnerCase(“CaT”)); // CAT
+//        System.out.println(flipInnerCase(“caT”)); // cAT
+//        System.out.println(flipInnerCase(“codeup”)); // cODEUp
+//        System.out.println(flipInnerCase(“CoDeup”)); // COdEUp
     }
 
     // warmup on 10/15/21
