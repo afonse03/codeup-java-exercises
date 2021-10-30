@@ -33,9 +33,10 @@ public class ConsoleExercises { // class definition
         Scanner scanner3 = new Scanner(System.in);
         System.out.println("");
         System.out.println("");
-        System.out.println("Enter a word: ");
-        String userInput3 = scanner3.next();
-        System.out.println("Enter a word: ");
-        String userInput4 = scanner4.next();
+        System.out.println("Enter three words: ");
+        String firstWord = scanner.next();
+        String secondWord = scanner.next();
+        String thirdWord = scanner.next();
+        System.out.printf("You entered: %n%s%n%s%n%s%n", firstWord, secondWord, thirdWord);
     }
 }
